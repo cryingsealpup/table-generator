@@ -6,12 +6,14 @@
       :todos="todos"
       :meta="meta"
     ></example-component>
+    <text-editor></text-editor>
   </q-page>
 </template>
 
 <script setup lang="ts">
 import { Todo, Meta } from 'components/models';
 import ExampleComponent from 'components/ExampleComponent.vue';
+import TextEditor from 'src/components/TextEditor.vue';
 import { ref } from 'vue';
 
 const todos = ref<Todo[]>([
